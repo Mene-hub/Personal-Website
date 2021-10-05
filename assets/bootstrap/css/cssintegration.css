@@ -110,3 +110,7 @@ h2{
 	padding: 20px;
 	background-color: #1e252e;
 }
+
+.project-card-no-image h4{
+	height: 80px;
+}

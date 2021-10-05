@@ -75,16 +75,32 @@ h2{
     border:1px solid rgb(240, 246, 252, 0.3);
 	color:white;
 	vertical-align: middle;
+	margin-right: 20px;
 }
 
 .Git_Button:hover{
-	padding-top:4px;
-	padding-bottom:4px;
-	padding-right: 11px;
-	padding-left: 11px;
+	background-color: #32c44d;
+    border:1px solid #32c44d;
+	color:white;
+	text-decoration: none;
+}
+
+.Git_Download{
+	padding-top:3px;
+	padding-bottom:6px;
+	padding-right: 10px;
+	padding-left: 10px;
 	border-radius:5px;
-	background-color:#32c44d;
-    border:0px solid rgb(240, 246, 252, 0.3);
+	background-color:#1879b9;
+    border:1px solid rgb(240, 246, 252, 0.3);
+	color:white;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.Git_Download:hover{
+	background-color: #2caadb;
+    border:1px solid #1879b9;
 	color:white;
 	text-decoration: none;
 }

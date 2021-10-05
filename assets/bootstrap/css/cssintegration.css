@@ -1,0 +1,96 @@
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color:#0d1117;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color:#262f3b;
+	border-radius:50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color:#262f3b;
+}
+
+.gitBox{
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+}
+
+.settoreDx, .settoreSx{
+	vertical-align: middle;
+	
+}
+
+.settoreSx{
+	text-align: left;
+	display: flow-root;
+}
+
+.settoreDx{
+	text-align: right;
+	display: flow-root;
+}
+
+.settoreSx > .infoimg{
+	float: left;
+	width: auto;
+}
+
+.settoreDx > .infoimg{
+	float: right;
+	width: auto;
+}
+
+h6{
+	color:white;
+}
+
+h4{
+	color:white;
+}
+
+h3{
+	color:white;
+}
+
+h2{
+	color:white;
+}
+
+.Git_Button{
+	padding-top:3px;
+	padding-bottom:6px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius:5px;
+	background-color:#2ea043;
+    border:1px solid rgb(240, 246, 252, 0.3);
+	color:white;
+	vertical-align: middle;
+}
+
+.Git_Button:hover{
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-right: 11px;
+	padding-left: 11px;
+	border-radius:5px;
+	background-color:#32c44d;
+    border:0px solid rgb(240, 246, 252, 0.3);
+	color:white;
+	text-decoration: none;
+}
+
+.skill-card{
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #1e252e;
+}

@@ -1,0 +1,120 @@
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background-color:white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-color:white;
+	border-radius:50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background-color:white;
+}
+
+.gitBox{
+	background-color: white;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+}
+
+.settoreDx, .settoreSx{
+	vertical-align: middle;
+	
+}
+
+.settoreSx{
+	text-align: left;
+	display: flow-root;
+}
+
+.settoreDx{
+	text-align: right;
+	display: flow-root;
+}
+
+.settoreSx > .infoimg{
+	float: left;
+	width: auto;
+}
+
+.settoreDx > .infoimg{
+	float: right;
+	width: auto;
+}
+
+h6{
+	color:#1e252e;
+}
+
+h4{
+	color:#1e252e;
+}
+
+h3{
+	color:#1e252e;
+}
+
+h2{
+	color:#1e252e;
+}
+
+.Git_Button{
+	padding-top:3px;
+	padding-bottom:6px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius:5px;
+	background-color:#2ea043;
+    border:1px solid rgb(240, 246, 252, 0.3);
+	color:white;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.Git_Button:hover{
+	background-color: #32c44d;
+    border:1px solid #32c44d;
+	color:white;
+	text-decoration: none;
+}
+
+.Git_Download{
+	padding-top:3px;
+	padding-bottom:6px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border-radius:5px;
+	background-color:#1879b9;
+    border:1px solid rgb(240, 246, 252, 0.3);
+	color:white;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+.Git_Download:hover{
+	background-color: #2caadb;
+    border:1px solid #1879b9;
+	color:white;
+	text-decoration: none;
+}
+
+.skill-card{
+	margin-top: 20px;
+	padding: 20px;
+	background-color: white;
+}
+
+.project-card-no-image h4{
+	height: 80px;
+}
+
+.social_link{
+	margin:1%;
+}

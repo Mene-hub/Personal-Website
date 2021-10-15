@@ -19,7 +19,7 @@ function styleChange(BoxChecked){
     if(document.getElementById("customSwitches").checked==false)
         setLight(true, BoxChecked);
         else
-        setDark(true, BoxChecked);
+        setDark(false, BoxChecked);
 }
 
 function setDark(saveStyle, BoxChecked){
@@ -33,7 +33,7 @@ function setDark(saveStyle, BoxChecked){
         localStorage.setItem("mene-hub_theme","dark");
 }
 
-function setLight(saveStylem, BoxChecked){
+function setLight(saveStyle, BoxChecked){
     if(BoxChecked)
         document.getElementById("customSwitches").checked = false;
 
@@ -48,7 +48,7 @@ function setBrowserStyle(BoxChecked){
     localStorage.removeItem("mene-hub_theme");
 
     if(darkThemeMq.matches)
-        setDark(false, BoxChecked);
+        setDark(true, BoxChecked);
         else
         setLight(false, BoxChecked);
 }

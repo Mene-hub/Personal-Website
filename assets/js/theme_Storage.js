@@ -1,29 +1,31 @@
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 
-function styleLoad(){
+function styleLoad(BoxChecked){
     if(localStorage.getItem("mene-hub_theme")=="dark"){
         localStorage.setItem("mene-hub_theme","dark");
-        setDark(false);
+        setDark(false, BoxChecked);
     }else 
         if(localStorage.getItem("mene-hub_theme")=="light"){
             localStorage.setItem("mene-hub_theme","light");
-            setLight(false);
+            setLight(false, BoxChecked);
         }else 
             if(darkThemeMq.matches)
-                setDark(false);
+                setDark(false, BoxChecked);
                 else
-                setLight(false);
+                setLight(false, BoxChecked);
 }
 
-function styleChange(){
+function styleChange(BoxChecked){
     if(document.getElementById("customSwitches").checked==false)
-        setLight(true);
+        setLight(true, BoxChecked);
         else
-        setDark(true);
+        setDark(true, BoxChecked);
 }
 
-function setDark(saveStyle){
-    document.getElementById("customSwitches").checked = true;
+function setDark(saveStyle, BoxChecked){
+    if(BoxChecked)
+        document.getElementById("customSwitches").checked = true;
+
     document.getElementById("boost_css").setAttribute("href", "assets/bootstrap/css/bootstrap.min_dark.css");
     document.getElementById("int_css").setAttribute("href", "assets/bootstrap/css/cssintegration_dark.css");
 
@@ -31,8 +33,10 @@ function setDark(saveStyle){
         localStorage.setItem("mene-hub_theme","dark");
 }
 
-function setLight(saveStyle){
-    document.getElementById("customSwitches").checked = false;
+function setLight(saveStylem, BoxChecked){
+    if(BoxChecked)
+        document.getElementById("customSwitches").checked = false;
+
     document.getElementById("boost_css").setAttribute("href", "assets/bootstrap/css/bootstrap.min_light.css");
     document.getElementById("int_css").setAttribute("href", "assets/bootstrap/css/cssintegration_light.css");
 
@@ -40,11 +44,11 @@ function setLight(saveStyle){
         localStorage.setItem("mene-hub_theme","light");
 }
 
-function setBrowserStyle(){
+function setBrowserStyle(BoxChecked){
     localStorage.removeItem("mene-hub_theme");
 
     if(darkThemeMq.matches)
-        setDark(false);
+        setDark(false, BoxChecked);
         else
-        setLight(false);
+        setLight(false, BoxChecked);
 }

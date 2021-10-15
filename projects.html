@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
-<body onload="gitConnection(); styleLoad();">
+<body onload="readJson(); gitConnection(); styleLoad(false);">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="opacity: 1;">
         <div class="container"><a class="navbar-brand logo" href="index.html">Claudio Menegotto</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,10 +43,13 @@
                         <!--option with dynamic fill-->
                     </datalist>
                 </div>
-                <div class="row" id="reposeContainer">
-                    
+                    <div class="row border-bottom" id="reposeContainer">
+                        <!--repos dynamic fill-->
                     </div>
-                </div>
+                    <br/>
+                    <div class="row border-bottom" id="CovereContainer">
+                        <!--cover dynamic fill-->
+                    </div>
             </div>
         </section>
     </main>
@@ -59,10 +62,13 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/theme_Storage.js"></script>
+    <script src="assets/js/CoverLibrary.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
     <script src="assets/js/connection.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>

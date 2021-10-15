@@ -1,0 +1,11 @@
+{
+    "Library":{
+        "Cover":
+        [
+            {"Name":"Mind Trip", "Description":"Rendered the base skeleton with Blender 3d, composed in photoshop with some other levels, masking and texturing", "path":"assets/cover/MindTrip.png","url":"https://soundcloud.com/claudio-menegotto/like-apashe-style"},
+            {"Name":"Off Venus", "Description":"Rendered the base statue with cinema 4D, composed in photoshop with some other levels, masking and texturing", "path":"assets/cover/OffVenus.png","url":"https://soundcloud.com/claudio-menegotto/around-me"},
+            {"Name":"Royally", "Description":"Rendered the crown with cinema 4D, composed in photoshop with some other levels, masking and texturing. to the final resoult i applied one of my presets on camera row", "path":"assets/cover/Royally.png","url":"https://soundcloud.com/claudio-menegotto/royally-beat"},
+            {"Name":"Fuori 2k", "Description":"Rendered the base ring-skeleton with cinema 4D, composed in photoshop with some other levels, masking and texturing.  to the final resoult i applied one of my presets on camera row", "path":"assets/cover/Fuori2K.png","url":"https://soundcloud.com/claudio-menegotto/fuori-2k"}
+        ]
+    }
+}

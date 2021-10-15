@@ -18,7 +18,7 @@ function gitConnection(){
 				document.getElementById("datalistOptions").innerHTML += "<option value='" + GitRepose[i].name + "' >";
 				template = "<div class='col-md-6 col-lg-4 projects_'> <div class='project-card-no-image' id='" + GitRepose[i].name + "' > <h3>" + GitRepose[i].name + "</h3> <h4>" + GitRepose[i].description + "</h4><a class='Git_Button' role='button' href='" + GitRepose[i].html_url + "'>more</a></div></div></div>";
 				var tmp = document.getElementById("reposeContainer");
-				tmp.innerHTML = tmp.innerHTML + template;
+				tmp.innerHTML += template;
 				gitReleases(GitRepose[i].name);
 			}
 		}

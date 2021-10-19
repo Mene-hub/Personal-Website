@@ -19,7 +19,7 @@ function styleChange(BoxChecked){
     if(document.getElementById("customSwitches").checked==false)
         setLight(true, BoxChecked);
         else
-        setDark(false, BoxChecked);
+        setDark(true, BoxChecked);
 }
 
 function setDark(saveStyle, BoxChecked){

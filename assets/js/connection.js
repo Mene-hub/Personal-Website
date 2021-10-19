@@ -42,6 +42,8 @@ function gitReleases(repos){
 			if(JSON.parse(get.response).length>0){
 				url = JSON.parse(get.response)[0].assets[0].browser_download_url;
 				document.getElementById(repos).innerHTML += "<a class='Git_Download' role='button' href='" + url + "' Target='Blank'>download</a>";
+				if(url.includes("glowclock-animatedbg"))
+					document.getElementById(repos).innerHTML += "<a class='Git_Download' role='button' href='./assets/live-hub/Glow-clock-background/index.html' Target='Blank'>live</a>";
 			}
 		}
 	}

@@ -1,6 +1,14 @@
 const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
 
+function socialAttribute(){
+    var nav = document.getElementsByClassName("navbar")[0];
+    var fixedSocial = document.getElementsByClassName("fixed-social")[0];
+    fixedSocial.setAttribute("style", "margin-top:" + nav.offsetHeight + "px;");
+}
+
 function styleLoad(BoxChecked){
+    socialAttribute();
+
     if(localStorage.getItem("mene-hub_theme")=="dark"){
         localStorage.setItem("mene-hub_theme","dark");
         setDark(false, BoxChecked);

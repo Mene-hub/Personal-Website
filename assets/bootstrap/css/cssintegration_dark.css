@@ -122,3 +122,24 @@ h2{
 .coverImg{
 	height: 140px;
 }
+
+
+.fixed-social{
+	width: fit-content;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left: 1%;
+	background-color: #1e252e;
+}
+
+.fixed-social h5{
+	padding-top: 10%;
+	padding-bottom:  10%;
+	width: fit-content;
+	cursor: pointer;
+	color: white;
+}
+
+.fixed-social h5:hover{
+	color:#1879b9;
+}

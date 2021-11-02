@@ -129,6 +129,7 @@ h2{
 	padding-right: 1%;
 	margin-left: 1%;
 	background-color: #1e252e;
+	z-index: 1;
 }
 
 .fixed-social h5{
